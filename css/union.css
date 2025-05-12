@@ -1,0 +1,238 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+}
+header nav {
+  width: 50%;
+}
+header nav ul {
+  height: 150px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+header logo {
+  margin: 20px 10px;
+  border: 5px solid sienna;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+  }
+}
+section {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.imaginmo {
+  grid-area: imag;
+  width: 100%;
+  height: 100%;
+}
+
+.presentacion img {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
+}
+
+.presentacion {
+  display: grid;
+  grid-template-areas: "titulo1 titulo1 titulo1" "titulo2 titulo2 titulo2" "imag parrafo parrafo";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(2, 150px) 400px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.presentacion .titulo1 {
+  grid-area: titulo1;
+  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
+}
+.presentacion .titulo2 {
+  grid-area: titulo2;
+  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
+}
+.presentacion .imaginmo {
+  grid-area: imag;
+}
+.presentacion .parrafoinmobiliria {
+  grid-area: parrafo;
+}
+
+@media (max-width: 480px) {
+  .presentacion img {
+    width: 90%;
+    height: 90%;
+  }
+  .presentacion {
+    grid-template-rows: repeat(2, 100px) 200px;
+  }
+}
+.casas img {
+  width: 100%;
+  height: 100%;
+}
+
+.casas img {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
+}
+
+.casas {
+  display: grid;
+  grid-template-areas: "gridtitulo1 gridtitulo1 gridtitulo1" "house1 gridparrafo1 gridparrafo1" "house1 gridparrafo1 gridparrafo1" "gridtitulo2 gridtitulo2 gridtitulo2" "house2 gridparrafo2 gridparrafo2" "house2 gridparrafo2 gridparrafo2";
+  grid-template-columns: 20% 45% 25%;
+  grid-template-rows: repeat(6, 150px);
+  justify-content: center;
+  /* eje horizontal*/
+  justify-items: center;
+  /*eje  vertical*/
+  align-items: center;
+  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
+  /* list-style:none saca los puntos del index, venta etc*/
+  /*las etiquetas a se deben trabajar sobre ellas.son exclusivas*/
+  /*ventas
+  /*a todas las imagenes le puse un 100% de alto y de ancho para que el sistmema lo ajuste automaticamente.*/
+  /*Caso contrario no se centralizaba las imagenes. Estaban todos comprimidos en el margen derecho inferior*/
+}
+.casas .ventastitulo1 {
+  grid-area: gridtitulo1;
+}
+.casas .ventascasa1 {
+  grid-area: house1;
+}
+.casas .ventasparrafo1 {
+  grid-area: gridparrafo1;
+}
+.casas .ventastitulo2 {
+  grid-area: gridtitulo2;
+}
+.casas .ventascasa2 {
+  grid-area: house2;
+}
+.casas .ventasparrafo2 {
+  grid-area: gridparrafo2;
+}
+
+.carouselslide {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselslide {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
+}
+
+.departamentos {
+  display: grid;
+  grid-template-areas: "titulo1 titulo1 titulo1" "parrafo1 parrafo1 parrafo1" "parrafo2 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo3" "parrafo4 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5" "dpto1 dpto1 dpto1" "inner1 parrafo7 parrafo7" "dpto2 dpto2 dpto2";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(3, 150px) 6, 100px;
+  justify-content: center;
+  /* eje horizontal*/
+  justify-items: center;
+  /*eje  vertical*/
+  align-items: center;
+}
+
+.requisitos {
+  grid-area: titulo1;
+}
+
+.p1 {
+  grid-area: parrafo1;
+}
+
+.p2 {
+  grid-area: parrafo2;
+}
+
+.p3 {
+  grid-area: parrafo3;
+}
+
+.p4 {
+  grid-area: parrafo4;
+}
+
+.p5 {
+  grid-area: parrafo5;
+}
+
+.avenida .titulodepto1 {
+  grid-area: dpto1;
+}
+.avenida .carouselslide1 {
+  grid-area: inner1;
+}
+.avenida .depto1-parrafo {
+  grid-area: parrafo7;
+}
+
+div .depto2 {
+  grid-area: dpto2;
+  background-color: white;
+}
+
+.depto2-parrafo {
+  grid-area: parrafo8;
+}
+
+.carouselslide2 {
+  grid-area: imagen4;
+}
+
+/*footer*/
+.footer {
+  background-color: red;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+}
+.footer .logowhatsapp {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+.footer .finaer {
+  width: 200px;
+  height: 80px;
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  box-shadow: 22px -19px 31px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=union.css.map */

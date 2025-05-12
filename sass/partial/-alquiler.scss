@@ -1,0 +1,82 @@
+
+.carouselslide {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselslide {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
+}
+
+.departamentos {
+  display: grid;
+  grid-template-areas:
+    "titulo1 titulo1 titulo1"
+    "parrafo1 parrafo1 parrafo1"
+    "parrafo2 parrafo2 parrafo2"
+    "parrafo3 parrafo3 parrafo3"
+    "parrafo4 parrafo4 parrafo4"
+    "parrafo5 parrafo5 parrafo5"
+    "dpto1 dpto1 dpto1"
+    "inner1 parrafo7 parrafo7"
+    "dpto2 dpto2 dpto2";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(3,150px) (6,100px);
+  justify-content: center;
+  /* eje horizontal*/
+  justify-items: center;
+  /*eje  vertical*/
+  align-items: center;
+  
+}
+.requisitos {
+  grid-area: titulo1;
+}
+.p1 {
+  grid-area: parrafo1;
+}
+.p2 {
+  grid-area: parrafo2
+}
+.p3 {
+  grid-area: parrafo3;
+}
+.p4 {
+  grid-area: parrafo4;
+}
+.p5 {
+  grid-area: parrafo5;
+}
+
+.avenida{
+.titulodepto1 {
+  grid-area: dpto1;}
+.carouselslide1 {
+    grid-area: inner1;}
+.depto1-parrafo {
+  grid-area: parrafo7;
+}}
+  
+
+
+div
+.depto2 {
+  grid-area: dpto2;
+  background-color: white;
+}
+
+.depto2-parrafo {
+  grid-area: parrafo8;
+}
+
+.carouselslide2 {
+  grid-area: imagen4;
+}
+
+@media (max-width:480px){
+
+}
+

@@ -1,0 +1,48 @@
+.imaginmo {
+      grid-area: imag;
+      width: 100%;
+      height: 100%;}
+      
+  .presentacion img{
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
+  }
+.presentacion {
+    display: grid;
+    grid-template-areas:
+    "titulo1 titulo1 titulo1"
+    "titulo2 titulo2 titulo2"
+    "imag parrafo parrafo";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(2, 150px) 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  .titulo1 {
+  grid-area: titulo1;
+  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);}
+    .titulo2{
+  grid-area: titulo2;
+  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
+   }
+   .imaginmo{ 
+    grid-area: imag;
+   }
+  .parrafoinmobiliria {
+  grid-area: parrafo;}
+   
+}
+@media (max-width:480px){
+  .presentacion img{
+    width: 90%;
+    height: 90%;}
+    .presentacion {
+ 
+    grid-template-rows: repeat(2, 100px)200px;}
+  
+}
+
+    
+

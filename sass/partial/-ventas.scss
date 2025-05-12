@@ -1,0 +1,56 @@
+  .casas img {
+  width: 100%;
+  height: 100%;
+}
+.casas img {
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+  box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
+}
+.casas {
+  display: grid;
+  grid-template-areas:
+    "gridtitulo1 gridtitulo1 gridtitulo1"
+    "house1 gridparrafo1 gridparrafo1"
+    "house1 gridparrafo1 gridparrafo1"
+    "gridtitulo2 gridtitulo2 gridtitulo2"
+    "house2 gridparrafo2 gridparrafo2"
+    "house2 gridparrafo2 gridparrafo2";
+  grid-template-columns: 20% 45% 25%;
+  grid-template-rows: repeat(6, 150px);
+  justify-content: center;
+  /* eje horizontal*/
+  justify-items: center;
+  /*eje  vertical*/
+  align-items: center;
+  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
+/* list-style:none saca los puntos del index, venta etc*/
+/*las etiquetas a se deben trabajar sobre ellas.son exclusivas*/
+/*ventas
+/*a todas las imagenes le puse un 100% de alto y de ancho para que el sistmema lo ajuste automaticamente.*/
+/*Caso contrario no se centralizaba las imagenes. Estaban todos comprimidos en el margen derecho inferior*/
+
+.ventastitulo1 {
+  grid-area: gridtitulo1;
+}
+.ventascasa1 {
+  grid-area: house1;
+}
+.ventasparrafo1 {
+  grid-area: gridparrafo1;
+}
+.ventastitulo2 {
+  grid-area: gridtitulo2;
+}
+.ventascasa2 {
+  grid-area: house2;
+}
+.ventasparrafo2 {
+  grid-area: gridparrafo2;
+
+}
+}
+@media (max-width:480px){
+
+}
