@@ -52,5 +52,44 @@
 }
 }
 @media (max-width:480px){
+  .casas {
+  display: grid;
+  grid-template-areas:
+    "gridtitulo1  gridtitulo1"
+    "house1  gridparrafo1"
+    "house1  gridparrafo1"
+    "gridtitulo2  gridtitulo2"
+    "house2  house2"
+    "house2  house2"
+    "gridparrafo2  gridparrafo2"
+    "gridparrafo2  gridparrafo2";
+  grid-template-columns: 45% 45%;
+  grid-template-rows: repeat(4, 100px) and (4, 150px)
+ 
+}
+.ventastitulo1 {
+  grid-area: gridtitulo1;
+}
+.ventascasa1 {
+  grid-area: house1;
+}
+.ventasparrafo1 {
+  grid-area: gridparrafo1;
+}
+.ventastitulo2 {
+  grid-area: gridtitulo2;
+}
+.ventascasa2 {
+  grid-area: house2;
+}
+.ventasparrafo2 {
+  grid-area: gridparrafo2;
 
+}
+.ventascasa2 {
+  grid-area: house2;
+}
+.ventasparrafo2 {
+  grid-area: gridparrafo2;
+}
 }

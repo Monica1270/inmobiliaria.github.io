@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Contacto</title>
    <!--vinculo el (nuevo) CSS en cada una de las hojas-->
    <link rel="stylesheet" href="../css/union.css">
@@ -12,7 +11,7 @@
 </head>
 <body>
   <header>
-        <a href="../index.html"><img class="logo"  src="../imagenesinmobiliaria/logo.png" alt=""></a>
+        <a href="../index.html"><img class="logo"  src="../imagenesinmobiliaria/logo.png" alt="Logo L con techo color rojo"></a>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a>
@@ -29,7 +28,7 @@
             <section>
                 <H1>Nuestra ubicación</H1>
                 <p>Sáenz Valiente, Martinez</p>
-            <iframe  class  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.5087601168384!2d-58.514859524530515!3d-34.489984151500046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb053892a9531%3A0x7b0a1326d2ae51d9!2sLombardi%20y%20Asociados!5e0!3m2!1ses!2sar!4v1742494248140!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe  class  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.5087601168384!2d-58.514859524530515!3d-34.489984151500046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb053892a9531%3A0x7b0a1326d2ae51d9!2sLombardi%20y%20Asociados!5e0!3m2!1ses!2sar!4v1742494248140!5m2!1ses!2sar" width="300" height="225" style="border:18px -8px 26px -2px rgba(35, 53, 9, 0.75);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </section>
             <!-- section de formulario-->
              <!-- From Uiverse.io by Smit-Prajapati --> 
@@ -38,41 +37,22 @@
 
    <section>
                 <h2>Dejanos tu mensaje</h2>
-                <form action="">
-                <!--para cada label hay imput en el label hay que poner que es cada cosa,
-                si no lo pongo veo solamente los cuadrados-->
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="" id="">
-                 <!-- From Uiverse.io by alexruix --> 
-                 <div class="input-group">
-                 <label class="label">Email address</label>
-                 <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                 <div></div></div>
+               <div class="input-grup">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+               
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Teléfono">
 
-                 <label for="celular">Celular</label>
-                 
-                 <input type="number" name="" id="">
-
-                 <p>Dejanos tu consulta</p>
-                 <!-- From Uiverse.io by 0xnihilism --> 
-                <div class="input-wrapper">
-                <input type="text" placeholder="Type here..." name="text" class="input" />
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-</svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-</svg>
-                 </div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name=" email" id="email" placeholder="Correo electrónico">
+            </div>
 </section>
     </main>
     <footer>
         <section class="footer">
-            <a href=https://api.whatsapp.com/send?phone +5491138245735><img class="logowhatsapp" src="../imagenesinmobiliaria/whatsapp.png" alt=""></a>
+            <a href=https://api.whatsapp.com/send?phone +5491138245735><img class="logowhatsapp" src="../imagenesinmobiliaria/whatsapp.png" alt="logo de whatsapp"></a>
     </section>
     </footer>
-    <!--scrip sie mpre ponerlo al final porque lee en cascada-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>   
 </body>
 </html>
