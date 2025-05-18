@@ -1,0 +1,40 @@
+.formulario {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba($color: #541e1e, $alpha: 1.0);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+}
+.input-grup {
+    display: flex;
+    flex-direction: column;
+    text-align: centers;
+}
+h2 {
+    color: black;
+    font-size: 25px;
+}
+label {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/*input, textarea pongo la coma para que afecte a los dos*/
+.input, textarea {
+    padding: 17px 25px;
+/*con el padding le doy un borde al formulario*/
+    border-radius: 25px;
+    margin-bottom: 20px;
+    /*margin-botton lo pongo para que me deje un espacio entre lineas*/
+    background-color:  #e4dddd ;
+    border: 2px solid #541e1e;
+    outline: none;
+    /*outline le estoy diciendo al sistma que no me ponga las lineas de los rectangulos*/
+}

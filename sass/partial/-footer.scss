@@ -1,16 +1,16 @@
 /*footer*/
 .footer {
   background-color: red;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   margin: 3px;
 
   .logowhatsapp {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 20px;
   }
 
@@ -18,7 +18,7 @@
     width: 200px;
     height: 80px;
     position: fixed;
-    bottom: 50px;
+    bottom: 15px;
     left: 20px;
     box-shadow: 22px -19px 31px 0px rgba(0, 0, 0, 0.75);
   }
