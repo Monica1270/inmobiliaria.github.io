@@ -1,3 +1,47 @@
+.text-focus-in, p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.text-focus-in {
+	-webkit-animation: text-focus-in 6s 2 ;
+	        animation: text-focus-in 6s 2 ;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.google {
+    display: flex;
+    flex-direction: column;
+    text-orientation: center;
+    box-shadow: 0 0 20px rgba($color: #541e1e, $alpha: 1.0);
+    border-radius: 20px;
+}
+
 .formulario {
     min-height: 100vh;
     display: flex;
@@ -18,17 +62,18 @@ form {
 }
 h2 {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 label {
     color: black;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 /*input, textarea pongo la coma para que afecte a los dos*/
-.input, textarea {
-    padding: 17px 25px;
+input, textarea {
+     padding: 17px 25px;
 /*con el padding le doy un borde al formulario*/
     border-radius: 25px;
     margin-bottom: 20px;
@@ -38,3 +83,37 @@ label {
     outline: none;
     /*outline le estoy diciendo al sistma que no me ponga las lineas de los rectangulos*/
 }
+ .btn {
+    font-size: 16px;
+    color: white;
+    border-radius: 15px;
+    background-color:#a44444 ;
+    box-shadow: 0 0 20px rgba($color: #541e1e, $alpha: 1.0);
+    cursor: pointer;
+ }
+
+@media (max-with:480px) {
+    form{
+        padding: 50px 30px;
+        width: 100px;
+    }
+    input {
+        padding: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -24,7 +24,7 @@ header nav ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-header logo {
+header .logo {
   margin: 20px 10px;
   border: 5px solid sienna;
   display: flex;
@@ -32,20 +32,30 @@ header logo {
 }
 
 @media (max-width: 480px) {
-  .logo {
-    width: 150px;
+  nav {
+    width: 100%;
+  }
+  nav ul {
     height: 150px;
-    flex-direction: column;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
   }
-  ul {
-    flex-direction: column;
+  .logo {
+    width: 10px;
+    height: 10px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 5px;
+    border: 5px solid sienna;
   }
 }
-section {
-  font-family: cursive;
-  font-size: 20px;
-}
-
 .imaginmo {
   grid-area: imag;
   width: 100%;
@@ -243,6 +253,63 @@ div .depto2 {
   grid-area: imagen4;
 }
 
+.estudio, h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.juridico {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.text-focus-in, p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 6s 2;
+  animation: text-focus-in 6s 2;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.google {
+  display: flex;
+  flex-direction: column;
+  text-orientation: center;
+  box-shadow: 0 0 20px #541e1e;
+  border-radius: 20px;
+}
+
 .formulario {
   min-height: 100vh;
   display: flex;
@@ -266,18 +333,19 @@ form {
 
 h2 {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 label {
   color: black;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
 /*input, textarea pongo la coma para que afecte a los dos*/
-.input, textarea {
+input, textarea {
   padding: 17px 25px;
   /*con el padding le doy un borde al formulario*/
   border-radius: 25px;
@@ -289,6 +357,24 @@ label {
   /*outline le estoy diciendo al sistma que no me ponga las lineas de los rectangulos*/
 }
 
+.btn {
+  font-size: 16px;
+  color: white;
+  border-radius: 15px;
+  background-color: #a44444;
+  box-shadow: 0 0 20px #541e1e;
+  cursor: pointer;
+}
+
+@media (max-with: 480px) {
+  form {
+    padding: 50px 30px;
+    width: 100px;
+  }
+  input {
+    padding: 15px;
+  }
+}
 /*footer*/
 .footer {
   background-color: red;
