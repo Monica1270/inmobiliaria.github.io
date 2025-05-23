@@ -1,7 +1,7 @@
 
-.carouselslide {
-  width: 100%;
-  height: 100%;
+.carousel-inner {
+  width: 39rem;
+  height: 39rem;
 }
 
 .carouselslide {
@@ -21,10 +21,14 @@
     "parrafo4 parrafo4 parrafo4"
     "parrafo5 parrafo5 parrafo5"
     "dpto1 dpto1 dpto1"
-    "inner1 parrafo7 parrafo7"
-    "dpto2 dpto2 dpto2";
+    "foto1 foto1 parrafo7"
+    "foto1 foto1 parrafo7"
+    "dpto2 dpto2 dpto2"
+    "foto2 foto2 parrafo8"
+    "foto2 foto2 parrafo8"
+    ;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: repeat(3,150px) (6,100px);
+  grid-template-rows: repeat (12,100px);
   justify-content: center;
   /* eje horizontal*/
   justify-items: center;
@@ -49,32 +53,39 @@
 }
 .p5 {
   grid-area: parrafo5;
+  margin-bottom: 50px;
 }
+.avenidatitulo {
+  grid-area: depto1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+d-block w-50 {
+  grid-area: foto1;
+  margin-bottom: 50px;
+}
+.avenidaparrafo {
+  grid-area:parrafo7;
+  margin-bottom: 50px;
 
-.avenida{
-.titulodepto1 {
-  grid-area: dpto1;}
-.carouselslide1 {
-    grid-area: inner1;}
-.depto1-parrafo {
-  grid-area: parrafo7;
-}}
+}
+.alfarotitulo{
+  grid-area: foto2;
+  text-align: center;
+  margin-bottom: 20px;
   
-
-
-div
-.depto2 {
-  grid-area: dpto2;
-  background-color: white;
 }
 
-.depto2-parrafo {
+
+.alfaroparrafo {
   grid-area: parrafo8;
 }
 
-.carouselslide2 {
-  grid-area: imagen4;
+
+d-block w-51 {
+  grid-area: foto2;
 }
+
 
 @media (max-width:480px){
 

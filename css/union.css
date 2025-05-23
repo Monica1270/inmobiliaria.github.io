@@ -182,9 +182,9 @@ header .logo {
     grid-area: gridparrafo2;
   }
 }
-.carouselslide {
-  width: 100%;
-  height: 100%;
+.carousel-inner {
+  width: 39rem;
+  height: 39rem;
 }
 
 .carouselslide {
@@ -196,9 +196,9 @@ header .logo {
 
 .departamentos {
   display: grid;
-  grid-template-areas: "titulo1 titulo1 titulo1" "parrafo1 parrafo1 parrafo1" "parrafo2 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo3" "parrafo4 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5" "dpto1 dpto1 dpto1" "inner1 parrafo7 parrafo7" "dpto2 dpto2 dpto2";
+  grid-template-areas: "titulo1 titulo1 titulo1" "parrafo1 parrafo1 parrafo1" "parrafo2 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo3" "parrafo4 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5" "dpto1 dpto1 dpto1" "foto1 foto1 parrafo7" "foto1 foto1 parrafo7" "dpto2 dpto2 dpto2" "foto2 foto2 parrafo8" "foto2 foto2 parrafo8";
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: repeat(3, 150px) 6, 100px;
+  grid-template-rows: repeat 12, 100px;
   justify-content: center;
   /* eje horizontal*/
   justify-items: center;
@@ -228,29 +228,37 @@ header .logo {
 
 .p5 {
   grid-area: parrafo5;
+  margin-bottom: 50px;
 }
 
-.avenida .titulodepto1 {
-  grid-area: dpto1;
+.avenidatitulo {
+  grid-area: depto1;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.avenida .carouselslide1 {
-  grid-area: inner1;
+
+d-block w-50 {
+  grid-area: foto1;
+  margin-bottom: 50px;
 }
-.avenida .depto1-parrafo {
+
+.avenidaparrafo {
   grid-area: parrafo7;
+  margin-bottom: 50px;
 }
 
-div .depto2 {
-  grid-area: dpto2;
-  background-color: white;
+.alfarotitulo {
+  grid-area: foto2;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.depto2-parrafo {
+.alfaroparrafo {
   grid-area: parrafo8;
 }
 
-.carouselslide2 {
-  grid-area: imagen4;
+d-block w-51 {
+  grid-area: foto2;
 }
 
 .estudio, h1 {
