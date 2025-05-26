@@ -25,23 +25,26 @@
   text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);}
     .titulo2{
   grid-area: titulo2;
-  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
    }
    .imaginmo{ 
     grid-area: imag;
    }
   .parrafoinmobiliria {
-  grid-area: parrafo;}
+  grid-area: parrafo;
+  font-size: 20px;}
    
 }
-@media (max-width:480px){
-  .presentacion img{
-    width: 90%;
-    height: 90%;}
-    .presentacion {
- 
-    grid-template-rows: repeat(2, 100px)200px;}
-  
+@media (max-width:800px){
+  .presentacion {
+    grid-template-areas: 
+    "titulo1"
+    "titulo2"
+    "parrafo"
+    "imag";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,80px) 300px; 
+
+  }
 }
 
     

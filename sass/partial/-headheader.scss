@@ -1,61 +1,63 @@
-
 @import url(https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900);
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
-    background-color: red;
-    display: flex;
-    justify-content: space-between;
-    margin: 3px;
-    nav {
-      width: 50%;
-      ul {
-        height: 150px;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 5%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-      }
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3px;
+
+  nav {
+    width: 50%;
+
+    ul {
+      height: 100px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 5%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+
     }
-    .logo{
-      margin: 20px 10px;
-        border: 5px solid sienna;
-        display: flex;
-        flex-direction: row;
-      }
   }
-    @media (max-width:480px) {
-      nav {
+
+  .logo {
+    margin: 20px 10px;
+    border: 5px solid sienna;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.logo {
+  width: 140px;
+  height: 80px;
+}
+
+
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+    margin: 1px;
+    nav {
       width: 100%;
       ul {
-        height: 150px;
-        list-style: none;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-right: 5%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        margin-right: 1px;
       }
     }
-.logo {
-        width: 10px;
-        height: 10px;
+    .logo {
+      justify-content: center;
+    }
+  }
 }
-.logo{
-        display: flex;
-        flex-direction: row;
-        margin: 5px 5px;
-        border: 5px solid sienna;
-      }
-    }
-
-     
-

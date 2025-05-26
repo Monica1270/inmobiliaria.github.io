@@ -24,7 +24,7 @@
   justify-items: center;
   /*eje  vertical*/
   align-items: center;
-  text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6);
+  /* text-shadow: 1px 13px 7px rgba(25, 42, 7, 0.6); */
 /* list-style:none saca los puntos del index, venta etc*/
 /*las etiquetas a se deben trabajar sobre ellas.son exclusivas*/
 /*ventas
@@ -39,6 +39,7 @@
 }
 .ventasparrafo1 {
   grid-area: gridparrafo1;
+  font-size: 17px;
 }
 .ventastitulo2 {
   grid-area: gridtitulo2;
@@ -48,48 +49,26 @@
 }
 .ventasparrafo2 {
   grid-area: gridparrafo2;
+  font-size: 17px;
 
 }
 }
-@media (max-width:480px){
+@media (max-width:800px) {
   .casas {
   display: grid;
   grid-template-areas:
-    "gridtitulo1  gridtitulo1"
-    "house1  gridparrafo1"
-    "house1  gridparrafo1"
-    "gridtitulo2  gridtitulo2"
-    "house2  house2"
-    "house2  house2"
-    "gridparrafo2  gridparrafo2"
-    "gridparrafo2  gridparrafo2";
-  grid-template-columns: 45% 45%;
-  grid-template-rows: repeat(4, 100px) and (4, 150px)
- 
-}
-.ventastitulo1 {
-  grid-area: gridtitulo1;
-}
-.ventascasa1 {
-  grid-area: house1;
-}
+    "gridtitulo1"
+    "gridparrafo1"
+    "house1"
+    "gridtitulo2"
+    "gridparrafo2"
+    "house2";
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 100px 250px 70px 200px 250px;
 .ventasparrafo1 {
-  grid-area: gridparrafo1;
-}
-.ventastitulo2 {
-  grid-area: gridtitulo2;
-}
-.ventascasa2 {
-  grid-area: house2;
+  font-size: 20px
 }
 .ventasparrafo2 {
-  grid-area: gridparrafo2;
-
+font-size: 20px;
 }
-.ventascasa2 {
-  grid-area: house2;
-}
-.ventasparrafo2 {
-  grid-area: gridparrafo2;
-}
-}
+}}

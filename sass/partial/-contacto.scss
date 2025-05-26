@@ -36,8 +36,8 @@
 }
 .google {
     display: flex;
-    flex-direction: column;
-    text-orientation: center;
+    flex-direction: row;
+    justify-content: center;
     box-shadow: 0 0 20px rgba($color: #541e1e, $alpha: 1.0);
     border-radius: 20px;
 }
@@ -47,6 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 form {
     padding: 50px 55px;
@@ -92,16 +93,24 @@ input, textarea {
     cursor: pointer;
  }
 
-@media (max-with:480px) {
-    form{
-        padding: 50px 30px;
-        width: 100px;
-    }
-    input {
-        padding: 15px;
-    }
-
+@media (max-with:800px) {
+  h2 {
+     margin-bottom: 15px;
+  }
+ .formulario {
+    padding: 30px;
+    min-height: 80vh;
+  }
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  input {
+    padding: 15px;
+  }
+ 
 }
+
 
 
 
