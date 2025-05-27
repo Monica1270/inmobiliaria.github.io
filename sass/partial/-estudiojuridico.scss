@@ -75,13 +75,15 @@
 @media (max-width:800px) {
     .estudio__pagina__tarjeta {
       max-width: 40%;  
+      h3 {
+        font-size: 1rem;
+      }
       ul {
        flex-direction: column; 
       justify-content: space-between;
       font-size: 10px;
-      }
-    }
+      } 
     .estudio__pagina__resenia {
       max-width: 80%;
     }
-}
+}}
