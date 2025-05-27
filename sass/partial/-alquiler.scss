@@ -1,9 +1,9 @@
- .carousel slide {
-    width: 20%;
-    height: 20%;
+ .d-block {
+    width: 100%;
+    height: 100%;
   }
 
-  .carousel slide {
+  .d-block {
     width: 95%;
     height: 95%;
     border-radius: 15px;
@@ -25,13 +25,15 @@
     "dpto2 dpto2 dpto2"
     "parrafo8 parrafo8 parrafo8"
     "foto2 foto2 foto2";
-  grid-template-rows: repeat(8, 70px) 300px (2, 70px) 300px;
-  grid-template-columns: 20% 20% 50%;
+  grid-template-columns: 45% 5% 45%;
+  grid-template-rows: repeat(7, 70px) 100px 300px (2, 70px) 300px;
   justify-content: center;
   /* eje horizontal*/
   justify-items: center;
   /*eje  vertical*/
   align-items: center;
+  font-size: 15px;
+ 
 
 }
 
@@ -63,42 +65,71 @@
 
 .titulo__avenida {
   grid-area: dpto1;
+  text-align: center;
 
 }
-
 .parrafo__avenida {
   grid-area: parrafo7;
+  
 }
-.carousel-inner {
-  width: 39rem;
-  height: 39rem;
-}
-
-.carouselslide {
-  width: 95%;
-  height: 95%;
-  border-radius: 15px;
-  box-shadow: 18px -8px 26px -2px rgba(35, 53, 9, 0.75);
-}
-.d-block w-15 {
+.carousel slide_avenida {
   grid-area: foto1;
-
-
- 
+  margin-bottom: 50px;
 }
+
+
+
 
 .titulo__alfaro {
   grid-area: dpto2;
-
+  text-align: center;
 }
 
-.d-block w-16 {
+.carousel slide_alfaro {
     grid-area: foto2;
+    width: 3rem;
+    height: 3rem;
 
 }
-
 
 .parrafo__alfaro {
   grid-area: parrafo8;
+}
+@media (max-width:800px) {
+  .departamentos {
+  display: grid;
+  grid-template-areas:
+    "titulo1"
+    "parrafo1"
+    "parrafo2"
+    "parrafo3"
+    "parrafo4"
+    "parrafo5"
+    "dpto1"
+    "parrafo7"
+    "foto1"
+    "dpto2"
+    "parrafo8"
+    "foto2";
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(7, 70px) 200px 250px (2, 70px) 300px;
+  justify-content: center;
+  /* eje horizontal*/
+  justify-items: center;
+  /*eje  vertical*/
+  align-items: center;
+}
+.titulo__avenida {
+  grid-area: dpto1;
+  text-align: center;
+}
+.parrafo__avenida {
+  grid-area: parrafo7;
+ text-align: center;
+}
+.titulo__alfaro {
+  grid-area: dpto2;
+  text-align: center;
 
+}
 }
